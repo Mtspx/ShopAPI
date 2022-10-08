@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LoveU </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/projetoMVC_C_.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Index" class="nav-link"><i class="fa-solid fa-house"></i> Pagina Incial</a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Cartas" class="nav-link"><i class="fa-solid fa-envelope"></i> Cartas</a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Fotos" class="nav-link"><i class="fa-solid fa-images"></i> Fotos</a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Mensagem" class="nav-link"><i class="fa-solid fa-message"></i> Mensagens</a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Chamado" class="nav-link disabled"><i class="fa-solid fa-headset"></i> Abrir chamado</a>
+    </li>
+</ul>
+    <div class="">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/7cbdf9d3de.js" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

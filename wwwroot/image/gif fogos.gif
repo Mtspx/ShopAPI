@@ -1,0 +1,547 @@
+﻿	<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta property="og:image" content="https://www.socialdub.com/samples/home.jpg" />
+<meta property="fb:app_id" content="676705789104159" />
+<meta name="google-site-verification" content="cZPS6YfXET-OQIXFL7yak2FSRYnV3xBRTwOEiozIFS4" />
+<meta name="verification" content="7a5cb5769ff745adf0f59241924c5e8d" />
+<link rel="canonical" href="/topico/mensagem-de-ano-novo/77340" />
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta name="keywords" content="socialdub, social network, rede social" />
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="/min/f=facebox/facebox.css,css/main_styles.css,fancybox/jquery.fancybox.css,fancybox/helpers/jquery.fancybox-buttons.css,fancybox/helpers/jquery.fancybox-thumbs.css?v=newscript" media="screen" />
+<link href="/distmmenu/jquery.mmenu.all.css" rel="stylesheet" />
+<script type="text/javascript">
+        var isMobile=false;
+        var JSversion = 'newscript';
+        var loggedUID = '0';
+        var area = 'topic';
+        var notify_server = 'https://www.socialdub.com/server.php';
+        var hashcode = 'b8a03bb628c1d07f7f22c3d71593731dc66b400d7940f2625437b8abfee84630&userid=0';
+    </script>
+<script type="text/javascript" src="/min/f=/js/jquery-latest.min.js,/fancybox/jquery.fancybox.js,/fancybox/helpers/jquery.fancybox-buttons.js,/fancybox/helpers/jquery.fancybox-media.js,/fancybox/helpers/jquery.fancybox-thumbs.js,/js/notify.min.js,/js/jquery.caret.js,/js/jquery.simple-color-picker.js,/js/jquery.htmlClean.min.js,/js/jquery.confirm.js,/js/bootbox.min.js,/js/jquery.timeago.js,/js/jquery.elastic.source.js,/js/jquery-ias.new.js,/js/jquery.placeholder.js,/facebox/facebox.js,/js/jquery.form.js,/js/bootstrap.min.js,/distmmenu/jquery.mmenu.all.js?variable2=newscript"></script>
+<script type="text/javascript" src="/js/scripts.js?variable2=newscript"></script>
+<script src="https://www.google.com/recaptcha/api.js?hl=pt-br" async defer></script>
+<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $("#menumobile").mmenu();
+        });
+    </script>
+<script type="text/javascript">
+                    $(document).ready(function() {
+                $(".fancybox").fancybox({
+                    padding: [5, 5, 5, 5],
+                    openEffect: "none",
+                    closeEffect: "none",
+                    closeBtn: false,
+                    helpers: {
+                        title: {
+                            type: "inside"
+                        },
+                        buttons: {}
+                    },
+                    afterShow: function() {
+                        var e = '<div class="photo-comments miolo" ></div>';
+                        $(".fancybox-inner").append(e);
+                        $(".fancybox-inner").width = 500;
+                        $(".photo-comments").load("/photocomments.php?photo_id=" + $(this.element).attr("data-id") + "&desc=")
+                    },
+                    beforeShow: function() {}
+                })
+            })
+
+            </script>
+<script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-6492965-44', 'auto');
+        ga('send', 'pageview');
+    </script>
+<div id="fb-root"></div>
+<script>
+        logInWithFacebook = function() {
+
+            $.confirm({
+                text: "Tem certeza de que deseja entrar com sua conta do Facebook? Se você ainda não possui uma conta no SocialDUB, será criada uma automáticamente, ao clicar em SIM!",
+                confirm: function(button) {
+                    goToFacebookLogin();
+
+                },
+                cancel: function(button) {
+                    //alert("Não.");
+                },
+                confirmButton: "Sim",
+                cancelButton: "Não"
+            });
+
+        }
+
+        goToFacebookLogin = function() {
+
+            FB.login(function(response) {
+                if (response.authResponse) {
+                    console.log(response);
+
+                    if (response.status == "connected") {
+                        window.location = "/fblogin.php";
+                    }
+                    //alert('You are logged in &amp; cookie set!');
+                    // Now you can redirect the user or do an AJAX request to
+                    // a PHP script that grabs the signed request from the cookie.
+                } else {
+                    alert('User cancelled login or did not fully authorize.');
+                }
+            }, {
+                scope: 'public_profile,email',
+                return_scopes: true,
+                auth_type: "rerequest"
+            });
+            return false;
+
+
+
+
+
+        };
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '118569675411881',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.9'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+<title>
+        Discussão: MENSAGEM DE ANO NOVO    </title>
+</head>
+
+<body style="background-image:url(/themes/homesocialdub.jpg?v2)" class="cover">
+<div class="container-fluid" style="background-color: #629B62; border-bottom:5px solid #333">
+<style type="text/css">
+
+.cover{
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover; 
+}
+.nocover{
+background-repeat: repeat-x;	
+}
+	.body{
+		background-color: #EEE;
+	}
+	
+	
+	#login_form input[type=text],#login_form input[type=password]{
+	height:25px;
+	color:#333;
+	padding:4px;
+	}
+	</style>
+<style type="text/css">
+#topo{background-color:#629B62}.block_title{background-color:#629B62;color:#FFF;text-align:center;margin-bottom:10px;-moz-border-radius:5px;border-radius:5px}ul#menuprofile .selected{background-color:#EEEEEE}#menu_topo ul li a:hover{color:#FFF;font-weight:700;height:100%;padding-top:4px;text-decoration:underline;}
+</style>
+<div class="container padding-top-desktop" style="background-color: #629B62;">
+<div class="col-md-7 col-sm-6 center-mobile">
+<a class="logotext" style="color: #FFF;font-size: 3.4em;" href="/">SOCIALDUB</a>
+</div>
+<div class="col-md-5 col-sm-6  hidden-xs">
+<div id="login">
+<form id="login_form" name="login_form" method="post" action="">
+<div style="display: inline-table;text-align:left;float:left">
+<input type="hidden" value="login" name="acao" id="acao" />
+E-mail:
+<input name="user" type="text" id="user" value="" size="10" tabindex="1" />
+<br />
+<input id="remember_me" name="remember_me" type="checkbox" value="Y" style="margin:0px; width:15px;margin-right:0px;border:0px">
+Manter conectado
+</div>
+<div style="display: inline-table; height:44px; clear:both; text-align:left;clear:both; padding-left:4px;"> Senha:
+<input name="pass" id="pass" type="password" size="10" tabindex="2" value="" />
+<br />
+<a href="/resetpassword.php" style="text-decoration: underline; padding-left: 10px;">Esqueci a Senha</a>
+- <a href="/index.php">Cadastro</a></div>
+<div style="display: inline-table; height:44px; text-align:left; float:right; padding-left:5px;">
+<input type="submit" name="recsenha" class="login_button" value="Entrar" tabindex="3" />
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="bloco_content" style="padding-top:10px">
+<div class="container" style="padding-bottom:10px;">
+<script type="text/javascript">
+                                        $(document).ready(function() {
+                                            $('#signInButton').click(function() {
+                                                $(this).attr('href', 'https://accounts.google.com/o/oauth2/auth?scope=' +
+                                                    'profile+email&' +
+                                                    'state=4c59e265689a1df9b6259c853b8729d4&' +
+                                                    'redirect_uri=https://www.socialdub.com/googlelogin.php&' +
+                                                    'response_type=code&' +
+                                                    'client_id=65616789949-pd4c07er517brcv52f400lfrft13e1mg.apps.googleusercontent.com&' +
+                                                    'access_type=offline');
+                                                return true; // Continue with the new href.
+                                            });
+                                        });
+                                    </script>
+<div style="row">
+<div class="col-md-12 hidden-xs text-center">
+<a class="facebook-login" onClick="logInWithFacebook()" href="#"><img src="/fblogin.png" alt="logar com sua conta do Facebook" width="170" /></a>&nbsp;&nbsp;<a href="#" id="signInButton"><img src="/googlelogin.png" width="170" alt="logar com sua conta do Google" /></a><br>
+</div>
+<div class="col-md-12 visible-xs  text-center">
+<a href="/login.php" class="btn-site" style="padding:3px; padding-left:10px;padding-right:10px;width:auto; color:#333; text-decoration:none;">Efetuar Login</a>
+</div>
+</div>
+</div>
+<div class="container section group" id="content_json" style="margin-top:0px;">
+<style type="text/css">
+	/* Profile container */
+	.profile {
+		padding-top: 0px;
+	}
+
+	/* Profile sidebar */
+	.profile-sidebar {
+		padding: 0px 0 0px 0;
+		background: #fff;
+	}
+
+	.profile-userpic img {
+		float: none;
+		margin: 0 auto;
+
+	}
+
+	.profile-usertitle {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.profile-usertitle-name {
+		color: #5a7391;
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 7px;
+	}
+
+	.profile-usertitle-job {
+		text-transform: uppercase;
+		color: #5b9bd1;
+		font-size: 12px;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+
+	.profile-userbuttons {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.profile-userbuttons .btn {
+		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: 600;
+		padding: 6px 15px;
+		margin-right: 5px;
+	}
+
+	.profile-userbuttons .btn:last-child {
+		margin-right: 0px;
+	}
+
+	.profile-usermenu {
+		margin-top: 30px;
+	}
+
+	.profile-usermenu ul li {
+		border-bottom: 1px solid #f0f4f7;
+	}
+
+	.profile-usermenu ul li:last-child {
+		border-bottom: none;
+	}
+
+	.profile-usermenu ul li a {
+		color: #93a3b5;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.profile-usermenu ul li a i {
+		margin-right: 8px;
+		font-size: 14px;
+	}
+
+	.profile-usermenu ul li a:hover {
+		background-color: #fafcfd;
+		color: #5b9bd1;
+	}
+
+	.profile-usermenu ul li.active {
+		border-bottom: none;
+	}
+
+	.profile-usermenu ul li.active a {
+		color: #5b9bd1;
+		background-color: #f6f9fb;
+		border-left: 2px solid #5b9bd1;
+		margin-left: -2px;
+	}
+
+	/* Profile Content */
+	.profile-content {
+
+		background: #fff;
+		min-height: 460px;
+
+	}
+
+	.rounded60 {
+		/*border-top-left-radius:60px;border-top-right-radius:60px*/
+	}
+</style>
+<div class="hidden">
+<nav id="menumobile" style="margin-top:20px;">
+<ul>
+<li> <a href="" class="profile_link"> <img src="groupspictures/892/892877682221364691.jpg?x2" style="width:100%" /></a></li>
+<li><a href="#"><strong>ME ESQUECI DE VIVER</strong></a></li>
+<li id="join_comm"><a href="javascript:void();" onclick="community_act(892,'join');"><span class="glyphicon glyphicon-ok"></span> Participar</a></li>
+<li><a href="community.php?cid=892"><span class="glyphicon glyphicon-home"></span> Perfil</a></li>
+<li><a href="topics.php?cid=892"><span class="glyphicon glyphicon-list-alt"></span> Forum</a></li>
+<li><a href="members.php?cid=892"><span class="glyphicon glyphicon-user"></span> Membros</a></li>
+<li>
+<li><a href="#" title="Denunciar esta comunidade!" onClick="return false;" class="report_link" data-content="community" data-postid="892"><span class="glyphicon glyphicon-info-sign"></span> Denunciar</a></li>
+<li><a href="/index.php?sair=ok"><span class="glyphicon glyphicon-eject"></span> Sair</a></li>
+</ul>
+</nav>
+</div>
+<div class="col-md-3 no-padding-mobile hidden-xs">
+<div class="padding-right">
+<div class="row profile ">
+<div class="profile-sidebar  rounded-border">
+
+<div class="profile-userpicr" style="background-color: ">
+<a href="https://www.socialdub.com/community.php?cid=892" class="profile_link">
+<img src="groupspictures/892/892877682221364691.jpg?x2" class="img-responsive" style="padding:20px" /></a>
+</div>
+<div class="profile-usertitle">
+<a href="community.php?cid=892" class="profile_link">
+<div class="profile-usertitle-name">
+ME ESQUECI DE VIVER </div>
+</a>
+</div>
+<div class="profile-usermenu">
+<ul class="nav">
+<li id="join_comm">
+<a href="javascript:void();" onclick="RegistertoParticipate();"><i class="glyphicon glyphicon-ok iconscolor"></i>Participar </a>
+</li>
+<li class="">
+<a href="community.php?cid=892"><i class="glyphicon glyphicon-home iconscolor"></i>Perfil</a>
+</li>
+<li class="">
+<a href="topics.php?cid=892"><i class="glyphicon glyphicon-list-alt iconscolor"></i>Forum</a>
+</li>
+
+<li class="">
+<a href="members.php?cid=892"><i class="glyphicon glyphicon-user iconscolor"></i>Membros</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-9 miolo">
+<h4>
+<img src="icons/application_cascade.png" width="16" height="16" />
+<span id="enable_edit_topic">MENSAGEM DE ANO NOVO</span>
+</h4>
+<div id="enable_input_edit_title_topic" style="display: none;">
+<input name="topic_title" type="text" id="topic_title" value="MENSAGEM DE ANO NOVO" maxlength="80" alt="required" class="form-control" placeholder="Título do tópico">
+<a href="#" onClick="return false;" id="edit_title_topic" class="edit_title_topic" style="color:#333;" title="Atualizar">&check;</a>
+<a href="#" onClick="return false;" id="cancel_edit_title_topic" class="cancel_edit_title_topic" style="color: #F00; 	font-size: 30px;" title="Cancelar">&times;</a>
+</div>
+<style>
+			#enable_input_edit_title_topic a {
+				font-size: 25px;
+				font-weight: bolder;
+				margin-left: 10px;
+			}
+
+			#enable_input_edit_title_topic a:hover {
+				text-decoration: none;
+			}
+
+			.posts_topico {
+				border-bottom: 4px solid #EEE;
+				margin-bottom: 10px;
+
+			}
+		</style>
+<hr>
+<div style="padding:10px; border:1px solid #CCC; margin-bottom:20px;">
+<b>PROMOÇÃO</b> Conta premium por <b>R$5,90</b>. <a href="/credits.php?uid=000&stage=premium" class="btn btn-success btn-lg">QUERO SER PREMIUM</a> </div>
+<a id="2127760"></a>
+<div id="post_2127760" class="posts_topico">
+<div class="dropdown " style="float:right; height:20px;margin-left:-110px;position:relative; padding-right:10px;" id="post_2127760">
+<button class="dropdown-toggle" style="background-color:#FFF; border:0px;" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+<ul class="dropdown-menu" id="post_2127760_menu" style="position: absolute; left: -131px;">
+<li><a href="#" title="Denunciar esta publicação!" onClick="return false;" class="report_link" data-content="group_post" data-postid="2127760">Denunciar</a></li>
+</ul>
+</div>
+<div class="media-left">
+<img src="profilepictures/87768/877680312292028_thumbnail.jpg?x2" class="media-object thumbnail" style="width:45px">
+<a name="ans" id="ans"></a> </div>
+<div class="media-body">
+<h5 class="media-heading"><a href="https://www.socialdub.com/userprofile.php?uid=87768">ANA MARIA FRANCISCO</a> <span style="color:#265CFF">( Administrador )</span>
+<span id="status_87768"></span>
+</h5>
+<p><abbr class="timeago" title="2014-12-31T00:35:07.0Z"></abbr></p>
+</div>
+<div class="post_content" id="postcontent_2127760"><img src="https://lh5.ggpht.com/_vmyMGtmG2XE/TOGDtKQbRLI/AAAAAAAAN7k/APA4Wf0aMlA/Animation50.png" alt="Animation50.png" /><br /><img src="https://lh4.ggpht.com/-uO1hTlADHE4/Ts6B1rX7NZI/AAAAAAAAZlU/DcLKvaLJOjI/la-fogos-12.gif" alt="la-fogos-12.gif" /><img src="https://lh4.ggpht.com/-uO1hTlADHE4/Ts6B1rX7NZI/AAAAAAAAZlU/DcLKvaLJOjI/la-fogos-12.gif" alt="la-fogos-12.gif" /><img src="https://lh4.ggpht.com/-uO1hTlADHE4/Ts6B1rX7NZI/AAAAAAAAZlU/DcLKvaLJOjI/la-fogos-12.gif" alt="la-fogos-12.gif" /><br /></div>
+<div class="quote" style=" display: block;">
+<a href="#quote" class="quotate quotelink" data-postid="#postcontent_2127760" data-authorname="ANA MARIA FRANCISCO">Citar</a> - <a href="#" class="liked_this showtooltip copy_html_link" data-action="get_post_html" data-postid="2127760" data-contentid="2127760" data-toggle="tooltip" data-original-title="Copiar código HTML">Código HTML</a>
+</div><br><br>
+</div>
+<a id="2128096"></a>
+<div id="post_2128096" class="posts_topico">
+<div class="dropdown " style="float:right; height:20px;margin-left:-110px;position:relative; padding-right:10px;" id="post_2128096">
+<button class="dropdown-toggle" style="background-color:#FFF; border:0px;" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+<ul class="dropdown-menu" id="post_2128096_menu" style="position: absolute; left: -131px;">
+<li><a href="#" title="Denunciar esta publicação!" onClick="return false;" class="report_link" data-content="group_post" data-postid="2128096">Denunciar</a></li>
+</ul>
+</div>
+<div class="media-left">
+<img src="profilepictures/87768/877680312292028_thumbnail.jpg?x2" class="media-object thumbnail" style="width:45px">
+<a name="ans" id="ans"></a> </div>
+<div class="media-body">
+<h5 class="media-heading"><a href="https://www.socialdub.com/userprofile.php?uid=87768">ANA MARIA FRANCISCO</a> <span style="color:#265CFF">( Administrador )</span>
+<span id="status_87768"></span>
+ </h5>
+<p><abbr class="timeago" title="2014-12-31T01:03:25.0Z"></abbr></p>
+</div>
+<div class="post_content" id="postcontent_2128096">
+<center> <br /><br /><img src="https://lh6.ggpht.com/_PdiFAmnpabI/S-OZn9z_O1I/AAAAAAAAAT4/81woQ94MKcI/0felizanonovo2.gif" alt="0felizanonovo2.gif" /><br /><br /><img src="https://lh4.ggpht.com/-d6brIL-BFSY/UqP3IsDeYeI/AAAAAAAAd9o/yfzwA-dR01Y/s400/melhorconteudo-fogos-de-artificio-8.gif" alt="melhorconteudo-fogos-de-artificio-8.gif" /><br /><br /><img src="http://c2.quickcachr.fotos.sapo.pt/i/o7f042e52/5577080_mpz29.gif" alt="5577080_mpz29.gif" /><br /><br /><img src="https://lh4.ggpht.com/-d6brIL-BFSY/UqP3IsDeYeI/AAAAAAAAd9o/yfzwA-dR01Y/s400/melhorconteudo-fogos-de-artificio-8.gif" alt="melhorconteudo-fogos-de-artificio-8.gif" /><br /><center> <img src="https://4.bp.blogspot.com/_LTj0HelxY0E/TRtVA86qKpI/AAAAAAAAkQ8/swSvDXDOZLA/s1600/ano+novo10.gif" alt="ano+novo10.gif" /><br /><p> <font color="#FF0000" size="4"><br /><br /><img src="https://lh4.ggpht.com/-d6brIL-BFSY/UqP3IsDeYeI/AAAAAAAAd9o/yfzwA-dR01Y/s400/melhorconteudo-fogos-de-artificio-8.gif" alt="melhorconteudo-fogos-de-artificio-8.gif" /><br /><br /><br /></font></p><center><img src="http://ekladata.com/qLFGpXdwQy8UqJ70BljU3TjuAdE.png" alt="qLFGpXdwQy8UqJ70BljU3TjuAdE.png" /><br /><br /><iframe width="300" height="215" src="//www.youtube.com/embed/x3PHpXx0Mfw?rel=0" frameborder="0">
+
+</iframe>
+<center> <br /><a href="community.php?cid=892"> </a><center><a href="community.php?cid=892"> <br /></a><center><a href="community.php?cid=892"> <img src="https://lh3.google.com/-u_wxWISXDoo/VDnFhrGnzWI/AAAAAAAAJ9I/kcE265gMK8I/s121/Sem-T%25C3%25ADtulo-1.gif" alt="Sem-T%25C3%25ADtulo-1.gif" /></a></center><a href="community.php?cid=892"></a></center><a href="community.php?cid=892"></a></center></center></center></center></div>
+<div class="quote" style=" display: block;">
+<a href="#quote" class="quotate quotelink" data-postid="#postcontent_2128096" data-authorname="ANA MARIA FRANCISCO">Citar</a> - <a href="#" class="liked_this showtooltip copy_html_link" data-action="get_post_html" data-postid="2128096" data-contentid="2128096" data-toggle="tooltip" data-original-title="Copiar código HTML">Código HTML</a>
+</div><br><br>
+</div>
+<a id="2128106"></a>
+<div id="post_2128106" class="posts_topico">
+<div class="dropdown " style="float:right; height:20px;margin-left:-110px;position:relative; padding-right:10px;" id="post_2128106">
+<button class="dropdown-toggle" style="background-color:#FFF; border:0px;" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+<ul class="dropdown-menu" id="post_2128106_menu" style="position: absolute; left: -131px;">
+<li><a href="#" title="Denunciar esta publicação!" onClick="return false;" class="report_link" data-content="group_post" data-postid="2128106">Denunciar</a></li>
+</ul>
+</div>
+<div class="media-left">
+<img src="profilepictures/87768/877680312292028_thumbnail.jpg?x2" class="media-object thumbnail" style="width:45px">
+<a name="ans" id="ans"></a> </div>
+<div class="media-body">
+<h5 class="media-heading"><a href="https://www.socialdub.com/userprofile.php?uid=87768">ANA MARIA FRANCISCO</a> <span style="color:#265CFF">( Administrador )</span>
+<span id="status_87768"></span>
+</h5>
+<p><abbr class="timeago" title="2014-12-31T01:04:03.0Z"></abbr></p>
+</div>
+<div class="post_content" id="postcontent_2128106"><div>&lt;center&gt; &lt;br&gt; &lt;br&gt;&lt;img src="<a href="https://www.socialdub.com/redirect.php?url=http%3A%2F%2Flh6.ggpht.com%2F_PdiFAmnpabI%2FS-OZn9z_O1I%2FAAAAAAAAAT4%2F81woQ94MKcI%2F0felizanonovo2.gif&amp;checksum=46c672cc70f9e8af4f78ea91b368c0f72f1714328b25bc3a8d68e526b373fca4">http://lh6.ggpht.com/_PdiFAmnpabI/S-OZn9z_O1I/AAAAAAAAAT4/81woQ94MKcI/0felizanonovo2.gif</a>"&gt;</div><div>&lt;BR&gt;&lt;br&gt;&lt;img src="<a href="https://www.socialdub.com/redirect.php?url=http%3A%2F%2Flh4.ggpht.com%2F-d6brIL-BFSY%2FUqP3IsDeYeI%2FAAAAAAAAd9o%2FyfzwA-dR01Y%2Fs400%2Fmelhorconteudo-fogos-de-artificio-8.gif&amp;checksum=a85b049a75fc007bf9040df4a8cdd45d3ebbfcd5f5b1900a36a312f6213ed14d">http://lh4.ggpht.com/-d6brIL-BFSY/UqP3IsDeYeI/AAAAAAAAd9o/yfzwA-dR01Y/s400/melhorconteudo-fogos-de-artificio-8.gif</a>"width=&gt;&lt;br&gt;&lt;br&gt;&lt;img</div><div>&lt;img src="<a href="https://www.socialdub.com/redirect.php?url=http%3A%2F%2Fc2.quickcachr.fotos.sapo.pt%2Fi%2Fo7f042e52%2F5577080_mpz29.gif&amp;checksum=3b83f980090aef1facfcf867ebdc7391fe4e88d6ba7caa1c1af3f8b15c4ce8c2">http://c2.quickcachr.fotos.sapo.pt/i/o7f042e52/5577080_mpz29.gif</a>"width=100&gt;&lt;br&gt;</div><div>&lt;br&gt;&lt;img src="<a href="https://www.socialdub.com/redirect.php?url=http%3A%2F%2Flh4.ggpht.com%2F-d6brIL-BFSY%2FUqP3IsDeYeI%2FAAAAAAAAd9o%2FyfzwA-dR01Y%2Fs400%2Fmelhorconteudo-fogos-de-artificio-8.gif&amp;checksum=a85b049a75fc007bf9040df4a8cdd45d3ebbfcd5f5b1900a36a312f6213ed14d">http://lh4.ggpht.com/-d6brIL-BFSY/UqP3IsDeYeI/AAAAAAAAd9o/yfzwA-dR01Y/s400/melhorconteudo-fogos-de-artificio-8.gif</a>"width=&gt;&lt;br&gt;</div><div>&lt;center&gt; &lt;img src="<a href="https://www.socialdub.com/redirect.php?url=http%3A%2F%2F4.bp.blogspot.com%2F_LTj0HelxY0E%2FTRtVA86qKpI%2FAAAAAAAAkQ8%2FswSvDXDOZLA%2Fs1600%2Fano%2Bnovo10.gif&amp;checksum=9c543cae41fe4e40194c6da102f64cdbe9a882378f1750561619a866790888af">http://4.bp.blogspot.com/_LTj0HelxY0E/TRtVA86qKpI/AAAAAAAAkQ8/swSvDXDOZLA/s1600/ano+novo10.gif</a>"width=&gt; &lt;br&gt; &lt;p style="text-shadow:1px 1px 7px black"&gt; &lt;font color=#FF0000 face="Precious" size=4&gt;&lt;br&gt;</div><div>&lt;br&gt;&lt;img src="<a href="https://www.socialdub.com/redirect.php?url=http%3A%2F%2Flh4.ggpht.com%2F-d6brIL-BFSY%2FUqP3IsDeYeI%2FAAAAAAAAd9o%2FyfzwA-dR01Y%2Fs400%2Fmelhorconteudo-fogos-de-artificio-8.gif&amp;checksum=a85b049a75fc007bf9040df4a8cdd45d3ebbfcd5f5b1900a36a312f6213ed14d">http://lh4.ggpht.com/-d6brIL-BFSY/UqP3IsDeYeI/AAAAAAAAd9o/yfzwA-dR01Y/s400/melhorconteudo-fogos-de-artificio-8.gif</a>"width=&gt;&lt;br&gt;&lt;br&gt;</div><div>&lt;bR&gt;&lt;CENTER&gt;&lt;img src="<a href="https://www.socialdub.com/redirect.php?url=http%3A%2F%2Fekladata.com%2FqLFGpXdwQy8UqJ70BljU3TjuAdE.png&amp;checksum=ccea66a40824cd4732053c84e3249a8c0b06dfca09549b37fe85134fefc109f7">http://ekladata.com/qLFGpXdwQy8UqJ70BljU3TjuAdE.png</a>"&gt;&lt;BR&gt;</div><div>&lt;br&gt;&lt;iframe width="300" height="215" src="//www.youtube.com/embed/x3PHpXx0Mfw?rel=0" frameborder="0" allowfullscreen="true"&gt;</div><div>&lt;/iframe&gt;</div><div>&lt;CENTER&gt; &lt;BR&gt;&lt;a href="community.php?cid=892" target="_blank"&gt; &lt;CENTER&gt; &lt;BR&gt; &lt;center&gt; &lt;img src="<a href="https://www.socialdub.com/redirect.php?url=http%3A%2F%2Flh3.google.com%2F-u_wxWISXDoo%2FVDnFhrGnzWI%2FAAAAAAAAJ9I%2FkcE265gMK8I%2Fs121%2FSem-T%2525C3%2525ADtulo-1.gif&amp;checksum=520d68a4036a8f73579cb6b77cda5a1b3cc2bbd79d478bbc1697fc826fa926a1">http://lh3.google.com/-u_wxWISXDoo/VDnFhrGnzWI/AAAAAAAAJ9I/kcE265gMK8I/s121/Sem-T%25C3%25ADtulo-1.gif</a></div><div>"&gt;</div></div>
+<div class="quote" style=" display: block;">
+<a href="#quote" class="quotate quotelink" data-postid="#postcontent_2128106" data-authorname="ANA MARIA FRANCISCO">Citar</a> - <a href="#" class="liked_this showtooltip copy_html_link" data-action="get_post_html" data-postid="2128106" data-contentid="2128106" data-toggle="tooltip" data-original-title="Copiar código HTML">Código HTML</a>
+</div><br><br>
+</div>
+<div style="padding:10px; border:1px solid #CCC; margin-bottom:20px;">
+<b>PROMOÇÃO</b> Conta premium por <b>R$5,90</b>. <a href="/credits.php?uid=000&stage=premium" class="btn btn-success btn-lg">QUERO SER PREMIUM</a> </div>
+
+<div class="miolo_responsive ">
+<h4><span class="glyphicon glyphicon-list-alt iconscolor"></span> Deixe sua opinião ou comentário</h4>
+Para responder um tópico é necessário participar da comunidade.	</div>
+<script type="text/javascript">
+		$(function() {
+			var lastclicked = 0;
+			$("body").on("click", ".floating_menu", function(e) {
+
+				var el = document.getElementById($(this).attr("id") + "_menu");
+
+
+				if ($(this).attr("id") != lastclicked) {
+					$(".floating_menu ul").hide();
+					lastclicked = $(this).attr("id");
+				}
+
+				if (el.style.display == "block") {
+					//se estover visivel, esconde
+					$("#" + $(this).attr("id") + "_menu").fadeOut(100);
+					e.stopPropagation();
+					$.end();
+				} else {
+					//	alert("hidden");
+					//se estiver escondido, deixa visivel
+					$("#" + $(this).attr("id") + "_menu").fadeIn(100);
+					e.stopPropagation();
+					$.end();
+				}
+
+			});
+
+			$(document).on("click", function(event) {
+				$(".floating_menu ul").hide();
+				event.stopPropagation();
+
+			});
+
+
+			$("body").on("click", ".report_link", function(event) {
+
+
+			});
+
+
+
+		});
+	</script>
+</div> </div>
+</div>
+</div>
+<footer class="footer hidden-xs">
+<div class="container" data-loggedid="0" style="display: flex; justify-content: space-between;align-items: center;">
+<p class="text-muted" style="flex:1"> 2014/2022 SocialDub - <a href="/help.php" class="various  fancybox.ajax linkrodape">Ajuda</a> | <a href="/about.php" class="various  fancybox.ajax linkrodape">Quem Somos</a> | <a href="/terms-of-use.php" class="various  fancybox.ajax linkrodape">Termos de Uso e Privacidade</a></p>
+<p class="text-muted" style="font-size: 10px">
+Última atualização | @Spinelli | 04/09/2022
+</p>
+</div>
+</footer>
+</body>
+</html>

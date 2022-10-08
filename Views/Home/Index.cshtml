@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="fullsize">
+    <div class="containerCards">
+        <h1 style="display: flex;">Criado Para a menina mais linda desse mundo !!</h1>
+        <a><button type="button"
+                style=" margin-top: 25px; font-size: 27px ; border: 1px solid black; box-shadow: 5px 5px 15px 3px rgb(0 0 0 / 85%);"
+                class="btn btn-primary btn-lg" onclick="feliz()">Aperte Aqui !!</button></a>
+    </div>
+</div>
+
+<style>
+    .containerCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fullsize {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-lg:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+</style>
+<script>
+
+    function feliz() {
+        Swal.fire({
+            title: 'Eu te amo',
+            titleFontSize: 42,
+            width: 350,
+            padding: '3em',
+            color: '#fff',
+            timer: 6000,
+            showConfirmButton: false,
+            background: 'transparent',
+            backdrop: `rgba(0,0,123,0.4) url("https://acegif.com/wp-content/uploads/gif-heart-51.gif") center no-repeat`
+        })
+    }
+
+</script>

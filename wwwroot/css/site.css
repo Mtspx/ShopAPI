@@ -1,0 +1,73 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+}
+
+.nav{
+}
+
+.nav-link{
+  color:black;
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card{
+  box-shadow: 5px 5px 15px 3px rgb(0 0 0 / 85%);
+}
+
+
+.g-4, .gy-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-4 img{
+  min-height: 392px;
+  max-width: 294px;
+  max-height: 392px;
+}
+
+.row .card{
+  margin: 0px 25px 25px 25px;
+}
+
+.mensagem .card{
+  flex-direction: row!important;
+}
+
+.cardMensagem {
+  display: flex;
+  justify-content: center;
+}
+
+.col-4.card {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.col-4.card:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 9999;
+}
+
+
+.fullsize{
+  width: 99vw;
+  height: 90vh;
+}

@@ -1,0 +1,17 @@
+<div class="container mt-4 mensagem">
+    <div class="card cardMensagem">
+        <h2><img src="~/image/perigo.png"> QUANDO ESTIVER TRISTE APERTE O BOTÃO ABAIXO <img src="~/image/perigo.png"></h2>
+    </div>
+
+    <div style="display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;">
+        <a style="width:200px; height: 50px;" onclick="mensagem()" class="btn btn-danger mt-4"><b style="font-size:larger;">APERTE AQUI</b></a>
+    </div>
+</div>
+<script>
+    function mensagem() {
+        Swal.fire('Seu namorado te ama e ainda está desenvolvendo isso aqui hihi <3')
+    }
+</script>

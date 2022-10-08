@@ -1,0 +1,57 @@
+<div class="container mt-4">
+    <h3>Central de Reclamação/Elogio</h3>
+    <div class="row">
+        <form>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label class="form-label">Para quem direncionar?</label>
+                    <select class="form-select">
+                        <option></option>
+                        <option value="1">Nane</option>
+                        <option value="2">Mateus</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tipo do chamado</label>
+                    <select class="form-select">
+                        <option></option>
+                        <option value="1">Reclamação</option>
+                        <option value="2">Elogio</option>
+                        <option value="3">Alerta</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label class="form-label">Gravidade</label>
+                    <select class="form-select">
+                        <option></option>
+                        <option value="1">Baixa</option>
+                        <option value="2">Média</option>
+                        <option value="3">Alta</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">É recente?</label>
+                    <select class="form-select">
+                        <option></option>
+                        <option value="1">Sim</option>
+                        <option value="2">Não</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text">Descreva o ocorrido em detalhes</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <button class="btn btn-primary"><a onclick="alerta()"></a>Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function alerta(){
+        Swal.fire('Seu chamado foi enviado com sucesso!')
+    }
+</script>
